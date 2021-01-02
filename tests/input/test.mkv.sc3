@@ -1,0 +1,54 @@
+ffmpeg version N-91330-ga990184007 Copyright (c) 2000-2018 the FFmpeg developers
+  built with gcc 7.3.0 (GCC)
+  configuration: --enable-gpl --enable-version3 --enable-sdl2 --enable-bzlib --enable-fontconfig --enable-gnutls --enable-iconv --enable-libass --enable-libbluray --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-libopus --enable-libshine --enable-libsnappy --enable-libsoxr --enable-libtheora --enable-libtwolame --enable-libvpx --enable-libwavpack --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libzimg --enable-lzma --enable-zlib --enable-gmp --enable-libvidstab --enable-libvorbis --enable-libvo-amrwbenc --enable-libmysofa --enable-libspeex --enable-libxvid --enable-libaom --enable-libmfx --enable-amf --enable-ffnvcodec --enable-cuvid --enable-d3d11va --enable-nvenc --enable-nvdec --enable-dxva2 --enable-avisynth
+  libavutil      56. 18.102 / 56. 18.102
+  libavcodec     58. 20.103 / 58. 20.103
+  libavformat    58. 17.100 / 58. 17.100
+  libavdevice    58.  4.101 / 58.  4.101
+  libavfilter     7. 25.100 /  7. 25.100
+  libswscale      5.  2.100 /  5.  2.100
+  libswresample   3.  2.100 /  3.  2.100
+  libpostproc    55.  2.100 / 55.  2.100
+Input #0, matroska,webm, from 'tests/input\test.mkv':
+  Metadata:
+    ENCODER         : Lavf58.17.100
+  Duration: 00:00:32.02, start: 0.000000, bitrate: 6863 kb/s
+    Stream #0:0: Video: h264 (High), yuv420p(tv, bt470bg/unknown/unknown, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 60 fps, 60 tbr, 1k tbn, 120 tbc (default)
+    Metadata:
+      DURATION        : 00:00:32.016000000
+    Stream #0:1: Audio: aac (LC), 44100 Hz, stereo, fltp (default)
+    Metadata:
+      title           : Microphone
+      DURATION        : 00:00:32.001000000
+    Stream #0:2: Audio: aac (LC), 44100 Hz, stereo, fltp (default)
+    Metadata:
+      title           : Combined
+      DURATION        : 00:00:32.001000000
+    Stream #0:3: Audio: aac (LC), 44100 Hz, stereo, fltp (default)
+    Metadata:
+      title           : BananaOutput
+      DURATION        : 00:00:32.001000000
+    Stream #0:4: Audio: aac (LC), 44100 Hz, stereo, fltp (default)
+    Metadata:
+      title           : Streaming
+      DURATION        : 00:00:32.001000000
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> wrapped_avframe (native))
+  Stream #0:1 -> #0:1 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'pipe:':
+  Metadata:
+    encoder         : Lavf58.17.100
+    Stream #0:0: Video: wrapped_avframe, yuv420p, 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 60 fps, 60 tbn, 60 tbc (default)
+    Metadata:
+      DURATION        : 00:00:32.016000000
+      encoder         : Lavc58.20.103 wrapped_avframe
+    Stream #0:1: Audio: pcm_s16le, 44100 Hz, stereo, s16, 1411 kb/s (default)
+    Metadata:
+      title           : Microphone
+      DURATION        : 00:00:32.001000000
+      encoder         : Lavc58.20.103 pcm_s16le
+frame=  344 fps=0.0 q=-0.0 size=N/A time=00:00:05.85 bitrate=N/A speed=11.6x    frame=  667 fps=665 q=-0.0 size=N/A time=00:00:11.24 bitrate=N/A speed=11.2x    [silencedetect @ 0000021a5e45c540] silence_start: 11.0451
+[silencedetect @ 0000021a5e45c540] silence_end: 16.756 | silence_duration: 5.71088
+frame= 1007 fps=670 q=-0.0 size=N/A time=00:00:16.93 bitrate=N/A speed=11.3x    frame= 1393 fps=695 q=-0.0 size=N/A time=00:00:23.36 bitrate=N/A speed=11.6x    frame= 1775 fps=708 q=-0.0 size=N/A time=00:00:29.70 bitrate=N/A speed=11.8x    frame= 1921 fps=708 q=-0.0 Lsize=N/A time=00:00:32.01 bitrate=N/A speed=11.8x    
+video:1006kB audio:5512kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
